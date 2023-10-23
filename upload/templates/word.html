@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Text Extractor</title>
+</head>
+<body>
+    <h1>Upload a Word File</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="word_file" accept=".docx">
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
